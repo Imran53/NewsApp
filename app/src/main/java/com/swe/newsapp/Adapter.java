@@ -40,7 +40,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(context, WebView.class);
+                Intent intent=new Intent(context, web.class);
                 intent.putExtra("url",modelClassArrayList.get(position).getUrl());
                 context.startActivity(intent);
             }
